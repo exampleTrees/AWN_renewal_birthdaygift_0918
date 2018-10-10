@@ -1,0 +1,2117 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+
+<html><head>
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="EXPIRES" content="NOW" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://d13p2xj50zkyqm.cloudfront.net/scripts/test/orderformtest.css">
+    <style>
+        body {
+            background: #315689;
+        }
+
+        div.contentwrapper {
+            margin-top: 0;
+            box-shadow: none;
+            border: none;
+            border-radius: 0;
+            max-width: 100em;
+            width: 100%;
+            background: none;
+        }
+
+        .top {
+            width: 100%;
+        }
+
+        .logo {
+            width: auto;
+            margin-top: 4em;
+            display: inline-block;
+            float: left;
+        }
+
+        .timer {
+            width: 25em;
+            margin: 2em auto 0;
+            display: block;
+        }
+
+        .number{
+          color: #fff;
+          font-size: 21px;
+          margin: 0.5em auto;
+          text-align: inherit;
+          font-weight: bold;
+          line-height: 1.2;
+          text-align: center;
+        }
+        .order-by{
+          font-size: 12px;
+          font-weight: normal;
+          text-align: left;
+        }
+        a.tel,
+        a.tel:link,
+        a.tel:visited {
+          color:white;
+        }
+        a.tel:hover,
+        a.tel:focus,
+        a.tel:active {
+          color:#ccc;
+        }
+
+        .clockbutton {
+            background-color: #333;
+            height: 30px;
+            width: 30px;
+            border: thin solid #000;
+            padding: 7px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        div.background {
+            background-color: #FFF;
+            margin-top: 1em;
+        }
+
+        div.testimonial {
+            clear: both;
+        }
+
+        div.audio {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: #DADBDD;
+            padding-top: 1%;
+        }
+
+        .order_content {
+            background: #FFF;
+        }
+
+        #af_form_wrapper {
+            margin: 0 0 1% 0;
+            border-radius: 0;
+        }
+
+        .listright {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            float: right;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listright ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft {
+            border: thin solid black;
+            display: inline-block;
+            width: 45%;
+            margin: 1% 2%;
+            padding: 1%;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+        }
+
+        .listleft ul {
+            margin: 1.25em 1em 1.25em 2.5em;
+        }
+
+        .listleft li {
+            margin-top: 2.37em;
+        }
+
+        .list {
+            border: thin solid black;
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            box-shadow: 8px 8px 24px 0px rgba(50, 50, 50, 0.60);
+            margin: 5% 5%;
+        }
+
+        .test {
+            width: 100%;
+            background: #FFF;
+        }
+
+        .center {
+            text-align: center;
+            padding-bottom: 1%;
+            font-size: 1.7em;
+            margin: 2% 10%;
+            font-weight: bold;
+            font-family: Georgia;
+        }
+
+        .question p {
+            text-align: left;
+            font-weight: bold;
+            font-size: 2.5em;
+        }
+
+        .question {
+            margin-top: 1em;
+            cursor: pointer;
+        }
+
+        .area1 {
+            max-width: 70em;
+            width: 100%;
+            border: thin solid black;
+            margin: 2% auto;
+            padding: 1%;
+            -webkit-box-shadow: 4px 4px 17px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 4px 4px 17px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 4px 4px 17px 0px rgba(50, 50, 50, 0.75);
+        }
+
+        .interest {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        img.image-center, img.image_center {        
+          display: block;          
+          text-align: center;          
+          margin: 0 auto;      
+        }
+
+        .bord {
+            border-bottom: medium dotted #DDD;
+            width: 98%;
+            margin: 0 auto;
+        }
+
+        .left {
+            float: left;
+            padding: 0 1em 0 2em;
+        }
+
+        .clickh {
+            color: #0000EE;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 2.5em;
+            text-decoration: underline;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            text-transform: capitalize;
+        }
+
+        .bpdate{display:none;}
+        .larger {
+          font-size: 1.5rem;
+          text-align: center;
+          font-weight:bold;
+        }
+        .centered {
+          text-align:center;
+        }
+        .green {
+          color:#2D8E2D;
+        }
+        div.autorenew {
+          text-align:left;
+          margin:0;
+        }
+        .show-for-one-column {
+          display: block;
+        }
+        .hide-for-one-column {
+          display: none;
+        }
+
+        @media screen and (min-width:975px){
+          div.right_column {
+            width:35%;
+          }
+          .show-for-one-column {
+            display: none;
+          }
+          .hide-for-one-column {
+            display: block;
+          }
+        }
+        @media only screen and (max-width: 640px){
+          .hidebr{display:none;}
+          h2, .headline h2 {
+            font-size:1.5rem;
+          }
+          h3 {
+            font-size: 1.25rem;
+            line-height:1.2;
+          }
+          .larger {
+            font-size: 1.25rem;
+          }
+          ul, ol {
+            margin:0 1em 0 3em;
+          }
+          div.order_confirm {
+            margin:2em;
+          }
+          .number{
+            font-size: 25px;
+            margin: 20px 10px;
+            text-align: inherit;
+            font-weight: bold;
+            line-height: 20px;
+            text-align: center;
+          }
+          .order-by{
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+          }
+        }
+    </style>
+    <!-- BETTER OF Form CSS -->
+    <style>
+          input[type="text"] {
+        width:100%;
+        max-width:200px;
+        border:1px solid #aaa;
+        border-radius:3px;
+        padding:0.25rem;
+      }
+      select {
+        padding:0.25rem;
+        max-width:200px;
+      }
+      div.af_form_wrapper span.field_text{
+        font-size: 1.5em;
+      }
+
+      @media only screen and (max-width: 359px){
+        div.af_form_wrapper div.field_wrapper {
+          margin: .5em;
+          width: 100%;
+          min-width: unset;
+        }
+        div.af_form_wrapper span.field_text {
+          display:inline;
+        }
+      }
+
+      @media only screen and (max-width: 974px){
+        div.af_form_wrapper span.required{
+          padding-right: .2em;
+        }
+      }
+    </style>
+   
+    
+        
+        <script src="https://images.web-purchases.com/jQuery/jquery.min.js" type="text/javascript"></script>
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+            <title>Strategic Intelligence Secure Order Form</title>
+</head><body>
+<style type="text/css">
+    .warning-message {
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: #ffffff;
+    }
+</style><div id='mainContainer' class='container'>
+  <!-- order.js -->
+
+
+  <script>
+    var imprint = "PP";
+  </script>
+
+<div class="contentwrapper large_wrapper " >
+   <div class="top row">
+    <div class="medium-4 columns hide-for-small-only">
+        <div class="logo">
+            <img class="image_center" src="https://research.agorafinancial.com/reports/AWN/spookymoney_0914/AWNRickards_Masthead.png" alt="Jim Rickards' Strategic Intelligence">
+        </div>
+    </div>
+
+    <div class="medium-4 columns hide-for-small-only">
+        <div class="timer">
+            <script>
+            // set the timers end time
+            // miliseconds * minutes
+            var minute_timer_end = 60000 * 15;
+            </script>
+
+           <div id="timerwrap" style="font-size: 12px;text-align: center;line-height: normal;font-weight: bold;color: #FFF;">
+                Time Left to order:
+                <div id="afTimer" style="display:block;margin:0 auto;padding:5px;text-align:center;width:225px;background-color:#333;border:solid 2px #999;">
+                    <h4 id="timeTitle" style="text-align:center;margin:0 auto;margin-bottom:5px;padding:0;font-family:sans-serif;font-size:30px;background-color:#555;color:#EEE;line-height:22px;"><span></span><span>Min.</span><span style="margin-left:35px;">Sec.</span></h4>
+                    <h4 id="countdown" style="text-align:center;margin:0 auto;padding:0;font-family:serif;font-size:30px;background-color:#555;color:#EEE;line-height:22px;"><span id="min" style="margin:0 15px 0 auto;">Minutes</span>:<span id="sec" style="margin-left:15px;">Seconds</span></h4>
+                </div>
+            </div>
+        </div>
+    </div><!-- / medium-4 -->
+
+    <div class="medium-4 columns">
+      <div class="number">
+        <span class="order-by">Order By Phone:</span><br />
+        <a class="tel" href="tel:1-844-883-2879"><img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/AWN/Assets/AWN_OFNumber.png" alt="Call us at 844-883-28779 to order" style="width:100%"/></a>
+      </div>
+    </div><!-- / medium-4 -->
+
+  </div><!-- top / row -->
+<div style="background: #fff;">
+  <div class="background" style="background: #fff;">
+
+    <div class="order_content">
+      <img class="image_center" src="https://d13p2xj50zkyqm.cloudfront.net/promos/AF/AWN/renewals/Renewal_AWN_Bday_0918.jpg" alt="Renew Your Strategic Intelligence subscription" style="width:100%"/>
+
+        <h2 class="red">... But You Must Claim Your Savings Before Time Runs Out:</h2>
+
+        <p>Dear Reader,</p>
+
+        <p>It is our editor’s birthday. And… to celebrate… we would like to reward his subscribers with an opportunity to lock in all of his research for LIFE.</p>
+        
+        <p>If you choose to celebrate with us, you get a LIFETIME of <strong><em>Jim Rickards’ Strategic Intelligence</em></strong> at an unheard-of discount.</p>
+        
+        <p>We want to celebrate with a VIP LIFETIME MEMBERSHIP for just $99 for you today.</p>
+        
+        <p>No more annual fees, subscription charges or automatic renewals… </p>
+        
+        <p>One charge of $99 and that’s it.</p>
+        
+        <p>Here is a quick summary of all the benefits you’ll receive as a LIFETIME subscriber to <strong><em>Jim Rickards’ Strategic Intelligence</em></strong>:</p>
+        
+        <p>When you upgrade your subscription today, you’ll get…</p>
+
+        <ul class="checkmark">
+          <li><strong><em><u>Strategic Intelligence</em> FREE for LIFE</u></strong> — Every month for life, you’ll get a full research letter, packed with the best recommendations for any monetary crisis</li>
+          <li><strong><u>Alerts Telling You When to Buy or Sell</u></strong> — You’ll get these alerts sent to you by email, so you can act in real time on recommendations and never be left wondering what to do</li>
+          <li><strong><u>Private Members-Only Website</u></strong> — You’ll get lifetime access to the <strong><em>Strategic Intelligence</em></strong> members’ area, with full access to any past issues or reports</li>
+          <li><strong><u>Four Extra Lifetime Live Event Briefings per Year</u></strong> — You’ll always have a front-row seat to these special events reserved for only our most elite <strong><em>Strategic Intelligence</em></strong> members</li>
+        </ul>
+
+        <p>Plus, these VIP benefits...</p>
+
+        <ul class="checkmark">
+          <li><strong><u>Access to Our Direct Dial Program for LIFE</u></strong> — You can call in and cut to the front of the line and speak to your very own customer care representative right away. We’ll never leave you with a question unanswered</li>
+          <li><strong><u>Enrollment in Our Legacy Program</u></strong> — Your loved ones will continue to receive these benefits and income-generating ideas even after you’re gone</li>
+          <li><strong><u>And much, much more!</u></strong></li>
+        </ul>
+
+        <p>Remember, this very low offer of $99 will only be open for a short time to celebrate Jim’s birthday and reward his readers with a great deal.</p>
+
+        <p>So don’t delay, simply fill out the form on your right to lock in your lifetime benefits of <strong><em>Strategic Intelligence</em></strong> today.</p>
+
+        
+        <p>
+          Sincerely,
+          <br>
+          <img src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/signatures/PeterCsmall.jpg" alt="Peter Coyne" style="max-width:150px"/>
+          <br>
+          Peter Coyne
+          <br>
+          Publisher, <strong><em>Jim Rickards' Strategic Intelligence</em></strong>.
+        </p>
+        
+        
+
+
+    </div><!-- /.order_content -->
+    <div id="af_form_wrapper" class="af_form_wrapper right_column">
+
+      <form method="post">
+
+
+<h2 class="form_headline" id="sign">Step #1: Review <br class="hidebr" />Your Subscription</h2>
+
+
+  
+     
+        <input name="formComponentsMap['offer'].choiceId" type="hidden" value="4990276" />
+
+  
+     
+    <input id="__selectedOfferPricingOptionId__" name="formComponentsMap['offer'].pricingOptionId" type="hidden" value="4989591" />
+
+
+
+        <div  class="choice">
+        <label>
+            <div align="left">
+                <h3 class="choiceName">
+                            A lifetime subscription to <em>Jim Rickards' Strategic Intelligence</em> for just $99
+
+                </h3>
+                <div class="hidethis">
+                <p class="choiceDescription">
+                            A lifetime subscription to <em>Jim Rickards' Strategic Intelligence</em> for just $99 with no refunds.  Termcode: 99LNR-AWN
+
+                </p>
+        
+                    <p class="autorenewMessage">
+                        <strong>The Term</strong> is
+                        <strong><span>    60
+</span> <span>months</span></strong>.
+                    </p>
+                
+        
+        
+    
+            <table class="priceOption">
+                <tr>
+                    <td width="18" class="radioCell">        
+    
+
+</td>
+                    <td width="180">
+                        <span class="label">Price:</span>
+                        <span class="data">   USD $
+      99.00
+</span>
+                    </td>
+                    
+                </tr>
+            </table>
+
+        <!-- Quantity box -->
+
+  
+     
+        <!-- End Quantity box -->
+
+        <!-- Shipping Options ----------------------------------------------------------------- -->
+
+
+
+        <!-- End Shipping Options ----------------------------------------------------------------- -->
+
+                <br>
+        
+                <hr size="1"></div>
+            </div>
+        </label>
+        </div>
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+<div class="autorenew" style="padding:0; margin:0; text-align:left;">
+<p><strong>Billing Terms:</strong> Once you accept your <strong><em>Jim Rickards’ Strategic Intelligence</em></strong> subscription, your credit card will be billed $99 immediately. But please note -- because of the exclusivity of this offer, I simply cannot offer any refunds.</p>
+
+<p>If you should have any questions regarding your subscription and/or would like further service please call our offices in Baltimore, Maryland: (844) 883-2879 Monday–Friday, 9 a.m. to 5 p.m. EDT.</p>
+</div>
+
+
+
+<h2 class="form_headline">Step #2: Enter Your Name & Email</h2>
+
+    
+    <input name="urlQueryString" id="urlQueryString" type="hidden" value="" />
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">First Name:</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['order'].firstName" type="text" value="" maxlength="20" class="form-control" class="form_input" />  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Last Name:</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['order'].lastName" type="text" value="" maxlength="25" class="form-control" class="form_input" />  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Email:</span>
+  </div>
+  <div class="field_input">
+        
+<input name="formComponentsMap['order'].emailAddress" type="text" value="" maxlength="254" id="__billingEmailAddress__" class="form-control" id="__billingEmailAddress__" class="form_input" />  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+
+    <div data-bind="" class="form-group" >
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Re-Type Email:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].confirmEmailAddress" type="text" value="" maxlength="254" class="form-control" class="form_input emailConfirm" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+    </div>
+
+        <div id="__passwordInputSection__" class="form-group" style="display:none;" >  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Password:</span>
+      </div>
+      <div class="field_input">
+    <input id="__wasPasswordFieldShown__" name="formComponentsMap['order'].wasPasswordFieldShown" type="hidden" value="false" />
+    <input name="formComponentsMap['order'].password" type="password" value="" maxlength="20" class="form-control" class="form_input" />
+      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+</div>
+
+
+<h2 class="form_headline">Step #3: Enter Your Mailing Address</h2>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Address 1:</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['order'].addressLine1" type="text" value="" maxlength="35" class="form-control" class="form_input" />  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required" style="color:#FFF;">*</span><span class="field_text">Address 2:</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['order'].addressLine2" type="text" value="" maxlength="35" class="form-control" class="form_input" />  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">City:</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['order'].city" type="text" value="" maxlength="35" class="form-control" class="form_input" />  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+        <div id="__stateInputSection__" class="form-group" >  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">State:</span>
+      </div>
+      <div class="field_input">
+        <input id="whichStateInput" name="formComponentsMap['order'].whichStateInput" type="hidden" value="" class="form-control"/>
+        <span id="stateSelect" data-bind=""></span>
+
+    <input type="text" data-bind="value:AGORA.viewModel.billingStateName, visible: false " class="form-control" />
+      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Zip/Postal Code:</span>
+  </div>
+  <div class="field_input">
+    <input id="__billToZipCode"
+        name="formComponentsMap['order'].postalCode" type="text" value="" maxlength="10" class="form-control" class="form_input" />
+  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Country:</span>
+  </div>
+  <div class="field_input">
+
+
+        <select id="__billingCountrySelect__" name="formComponentsMap['order'].countryId" class="form_input"
+                data-bind=""
+                class="form-control input-sm">
+
+                <option value="1" selected="selected" >UNITED STATES</option>
+
+                <option value="3"  >AFGHANISTAN</option>
+
+                <option value="4"  >ALBANIA</option>
+
+                <option value="5"  >ALGERIA</option>
+
+                <option value="6"  >ANDORRA</option>
+
+                <option value="7"  >ANGOLA</option>
+
+                <option value="9"  >ANGUILLA</option>
+
+                <option value="8"  >ANTARCTICA</option>
+
+                <option value="2"  >ANTIGUA AND BARBUDA</option>
+
+                <option value="10"  >ARGENTINA</option>
+
+                <option value="11"  >ARMENIA</option>
+
+                <option value="12"  >ARUBA</option>
+
+                <option value="13"  >AUSTRIA</option>
+
+                <option value="16"  >AZERBAIDJAN</option>
+
+                <option value="24"  >BAHAMAS</option>
+
+                <option value="17"  >BAHRAIN</option>
+
+                <option value="18"  >BANGLADESH</option>
+
+                <option value="19"  >BARBADOS</option>
+
+                <option value="20"  >BELARUS</option>
+
+                <option value="25"  >BELGIUM</option>
+
+                <option value="26"  >BELIZE</option>
+
+                <option value="21"  >BENIN</option>
+
+                <option value="22"  >BERMUDA</option>
+
+                <option value="35"  >BHUTAN</option>
+
+                <option value="27"  >BOLIVIA</option>
+
+                <option value="254"  >BONAIRE,ST EUST,SABA</option>
+
+                <option value="28"  >BOSNIA-HERZEGOVINA</option>
+
+                <option value="29"  >BOTSWANA</option>
+
+                <option value="30"  >BRAZIL</option>
+
+                <option value="100"  >BRITISH INDIAN OCEAN</option>
+
+                <option value="32"  >BRUNEI DARUSSALAM</option>
+
+                <option value="33"  >BULGARIA</option>
+
+                <option value="23"  >BURKINA FASO</option>
+
+                <option value="31"  >BURUNDI</option>
+
+                <option value="36"  >CAMBODIA</option>
+
+                <option value="37"  >CAMEROON</option>
+
+                <option value="38"  >CANADA</option>
+
+                <option value="40"  >CAPE VERDE</option>
+
+                <option value="41"  >CAYMAN ISLANDS</option>
+
+                <option value="39"  >CENTRAL AFRICAN REPU</option>
+
+                <option value="42"  >CHAD</option>
+
+                <option value="43"  >CHILE</option>
+
+                <option value="46"  >CHINA</option>
+
+                <option value="242"  >CHRISTMAS ISLAND</option>
+
+                <option value="253"  >COCOS (KEELING) ISLA</option>
+
+                <option value="47"  >COLOMBIA</option>
+
+                <option value="48"  >COMOROS</option>
+
+                <option value="49"  >CONGO</option>
+
+                <option value="45"  >COOK ISLANDS</option>
+
+                <option value="50"  >COSTA RICA</option>
+
+                <option value="51"  >CROATIA</option>
+
+                <option value="52"  >CUBA</option>
+
+                <option value="241"  >CURACAO</option>
+
+                <option value="53"  >CYPRUS</option>
+
+                <option value="54"  >CZECH REPUBLIC</option>
+
+                <option value="55"  >DENMARK</option>
+
+                <option value="56"  >DJIBOUTI</option>
+
+                <option value="57"  >DOMINICA</option>
+
+                <option value="58"  >DOMINICAN REPUBLIC</option>
+
+                <option value="67"  >EAST TIMOR</option>
+
+                <option value="60"  >ECUADOR</option>
+
+                <option value="62"  >EGYPT</option>
+
+                <option value="63"  >EL SALVADOR</option>
+
+                <option value="61"  >EQUATIORIAL GUINEA</option>
+
+                <option value="64"  >ERITREA</option>
+
+                <option value="65"  >ESTONIA</option>
+
+                <option value="66"  >ETHIOPIA</option>
+
+                <option value="68"  >FAEROE ISLANDS</option>
+
+                <option value="69"  >FALKLAND ISLANDS</option>
+
+                <option value="75"  >FED STATE MICRONESIA</option>
+
+                <option value="71"  >FIJI</option>
+
+                <option value="72"  >FINLAND</option>
+
+                <option value="74"  >FRANCE</option>
+
+                <option value="255"  >FRANCE METROPOLITAN</option>
+
+                <option value="70"  >FRENCH GUIANA</option>
+
+                <option value="73"  >FRENCH POLYNESIA</option>
+
+                <option value="240"  >FRENCH SOUTHERN TERR</option>
+
+                <option value="77"  >GABON</option>
+
+                <option value="79"  >GAMBIA</option>
+
+                <option value="84"  >GEORGIA, REPUBLIC OF</option>
+
+                <option value="83"  >GERMANY</option>
+
+                <option value="85"  >GHANA</option>
+
+                <option value="86"  >GIBRALTAR</option>
+
+                <option value="88"  >GREECE</option>
+
+                <option value="89"  >GREENLAND</option>
+
+                <option value="87"  >GRENADA</option>
+
+                <option value="78"  >GUADELOUPE</option>
+
+                <option value="90"  >GUATEMALA</option>
+
+                <option value="91"  >GUINEA</option>
+
+                <option value="81"  >GUINEA BISSAU</option>
+
+                <option value="92"  >GUYANA</option>
+
+                <option value="93"  >HAITI</option>
+
+                <option value="244"  >HEARD AND MC DONALD</option>
+
+                <option value="95"  >HONDURAS</option>
+
+                <option value="94"  >HONG KONG</option>
+
+                <option value="96"  >HUNGARY</option>
+
+                <option value="97"  >ICELAND</option>
+
+                <option value="99"  >INDIA</option>
+
+                <option value="98"  >INDONESIA</option>
+
+                <option value="101"  >IRAN</option>
+
+                <option value="103"  >IRAQ</option>
+
+                <option value="102"  >IRELAND</option>
+
+                <option value="104"  >ISRAEL</option>
+
+                <option value="105"  >ITALY</option>
+
+                <option value="106"  >IVORY COAST</option>
+
+                <option value="107"  >JAMAICA</option>
+
+                <option value="108"  >JAPAN</option>
+
+                <option value="109"  >JORDAN</option>
+
+                <option value="110"  >KAZAKHSTAN</option>
+
+                <option value="111"  >KENYA</option>
+
+                <option value="112"  >KIRIBATI</option>
+
+                <option value="113"  >KOREA</option>
+
+                <option value="161"  >KOREA DEMOCRATIC PE</option>
+
+                <option value="114"  >KUWAIT</option>
+
+                <option value="115"  >KYRGYZSTAN</option>
+
+                <option value="116"  >LAO PEOPLES DEM REP</option>
+
+                <option value="117"  >LATVIA</option>
+
+                <option value="119"  >LEBANON</option>
+
+                <option value="122"  >LESOTHO</option>
+
+                <option value="123"  >LIBERIA</option>
+
+                <option value="118"  >LIBYA(N ARAB JAMAHI)</option>
+
+                <option value="124"  >LIECHTENSTEIN</option>
+
+                <option value="125"  >LITHUANIA</option>
+
+                <option value="126"  >LUXEMBOURG</option>
+
+                <option value="127"  >MACAO</option>
+
+                <option value="133"  >MACEDONIA</option>
+
+                <option value="128"  >MADAGASCAR</option>
+
+                <option value="129"  >MALAWI</option>
+
+                <option value="142"  >MALAYSIA</option>
+
+                <option value="140"  >MALDIVES</option>
+
+                <option value="139"  >MALI</option>
+
+                <option value="141"  >MALTA</option>
+
+                <option value="137"  >MARSHALL ISLANDS</option>
+
+                <option value="130"  >MARTINIQUE</option>
+
+                <option value="131"  >MAURITANIA</option>
+
+                <option value="147"  >MAURITIUS</option>
+
+                <option value="132"  >MAYOTTE</option>
+
+                <option value="134"  >MEXICO</option>
+
+                <option value="138"  >MOLDOVA</option>
+
+                <option value="143"  >MONACO</option>
+
+                <option value="135"  >MONGOLIA</option>
+
+                <option value="145"  >MONTSERRAT</option>
+
+                <option value="144"  >MOROCCO</option>
+
+                <option value="146"  >MOZAMBIQUE</option>
+
+                <option value="148"  >MYANMAR</option>
+
+                <option value="149"  >NAMIBIA</option>
+
+                <option value="151"  >NAURU</option>
+
+                <option value="153"  >NEPAL</option>
+
+                <option value="150"  >NETHERLAND ANTILLES</option>
+
+                <option value="154"  >NETHERLANDS</option>
+
+                <option value="152"  >NEW CALEDONIA</option>
+
+                <option value="164"  >NEW ZEALAND</option>
+
+                <option value="158"  >NICARAGUA</option>
+
+                <option value="155"  >NIGER</option>
+
+                <option value="159"  >NIGERIA</option>
+
+                <option value="160"  >NIUE</option>
+
+                <option value="246"  >NORFOLK ISLAND</option>
+
+                <option value="162"  >NORTHERN MARIANA ISL</option>
+
+                <option value="163"  >NORWAY</option>
+
+                <option value="165"  >OMAN</option>
+
+                <option value="166"  >PAKISTAN</option>
+
+                <option value="167"  >PALAU</option>
+
+                <option value="168"  >PANAMA</option>
+
+                <option value="156"  >PAPUA NEW GUINEA</option>
+
+                <option value="169"  >PARAGUAY</option>
+
+                <option value="170"  >PERU</option>
+
+                <option value="171"  >PHILIPPINES</option>
+
+                <option value="172"  >PITCAIRN ISLANDS</option>
+
+                <option value="173"  >POLAND</option>
+
+                <option value="174"  >PORTUGAL</option>
+
+                <option value="175"  >QATAR</option>
+
+                <option value="176"  >REUNION</option>
+
+                <option value="178"  >ROMANIA</option>
+
+                <option value="225"  >RUSSIAN FEDERATION</option>
+
+                <option value="179"  >RWANDA</option>
+
+                <option value="198"  >SAINT HELENA</option>
+
+                <option value="188"  >SAINT KITTS AND NEVI</option>
+
+                <option value="191"  >SAINT LUCIA</option>
+
+                <option value="202"  >SAINT VINCENT AND GR</option>
+
+                <option value="181"  >SAMOA</option>
+
+                <option value="193"  >SAN MARINO</option>
+
+                <option value="197"  >SAO TOME & PRINCIPE</option>
+
+                <option value="182"  >SAUDI ARABIA</option>
+
+                <option value="183"  >SENEGAL</option>
+
+                <option value="236"  >SERBIA & MONTENEGRO</option>
+
+                <option value="185"  >SEYCHELLES</option>
+
+                <option value="186"  >SIERRA LEONE</option>
+
+                <option value="187"  >SINGAPORE</option>
+
+                <option value="249"  >SINT MAARTEN</option>
+
+                <option value="190"  >SLOVAKIA</option>
+
+                <option value="192"  >SLOVENIA</option>
+
+                <option value="189"  >SOLOMON ISLANDS</option>
+
+                <option value="194"  >SOMALIA</option>
+
+                <option value="180"  >SOUTH AFRICA</option>
+
+                <option value="247"  >SOUTH GEORGIA & THE S. SANDWICH ISL.</option>
+
+                <option value="177"  >SOUTH KOREA</option>
+
+                <option value="195"  >SPAIN</option>
+
+                <option value="196"  >SRI LANKA</option>
+
+                <option value="245"  >ST. MARTIN</option>
+
+                <option value="199"  >ST. PIERRE &MIQUELON</option>
+
+                <option value="200"  >SUDAN</option>
+
+                <option value="201"  >SURINAME</option>
+
+                <option value="248"  >SVALBARD AND JAN MAY</option>
+
+                <option value="206"  >SWAZILAND</option>
+
+                <option value="204"  >SWEDEN</option>
+
+                <option value="205"  >SWITZERLAND</option>
+
+                <option value="207"  >SYRIA</option>
+
+                <option value="208"  >TAIWAN</option>
+
+                <option value="209"  >TAJIKISTAN</option>
+
+                <option value="210"  >TANZANIA</option>
+
+                <option value="212"  >THAILAND</option>
+
+                <option value="215"  >TOGO</option>
+
+                <option value="250"  >TOKELAU</option>
+
+                <option value="214"  >TONGA</option>
+
+                <option value="217"  >TRINIDAD AND TOBAGO</option>
+
+                <option value="218"  >TUNISIA</option>
+
+                <option value="219"  >TURKEY</option>
+
+                <option value="213"  >TURKMENISTAN</option>
+
+                <option value="211"  >TURKS AND CAICOS</option>
+
+                <option value="220"  >TUVALU</option>
+
+                <option value="222"  >UGANDA</option>
+
+                <option value="223"  >UKRAINE</option>
+
+                <option value="221"  >UNITED ARAB EMIRATES</option>
+
+                <option value="82"  >UNITED KINGDOM</option>
+
+                <option value="251"  >UNITED STATES MINOR</option>
+
+                <option value="224"  >URUGUAY</option>
+
+                <option value="226"  >UZBEKISTAN</option>
+
+                <option value="227"  >VANUATU</option>
+
+                <option value="228"  >VATICAN CITY STATE</option>
+
+                <option value="229"  >VENEZUELA</option>
+
+                <option value="230"  >VIETNAM</option>
+
+                <option value="231"  >VIRGIN IS, BRIT</option>
+
+                <option value="252"  >WALLIS AND FUTUNA IS</option>
+
+                <option value="243"  >WESTERN SAHARA</option>
+
+                <option value="235"  >YEMEN</option>
+
+                <option value="237"  >ZAIRE</option>
+
+                <option value="238"  >ZAMBIA</option>
+
+                <option value="239"  >ZIMBABWE</option>
+        </select>
+        
+        <input type="text" data-bind="value:AGORA.viewModel.billingCountryName, visible: false " class="form-control" />
+        
+       
+  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+      <span class="required">*</span><span class="field_text">Phone:</span>
+  </div>
+  <div class="field_input">
+    <input name="formComponentsMap['order'].phoneNumber" type="text" data-bind="" value="" maxlength="25" class="form-control" class="form_input" />
+  </div>
+  
+     
+  <div class="clear"></div>
+</div>
+
+<div class="hidethis">
+  Fax:
+
+    <input name="formComponentsMap['order'].faxNumber" type="text" data-bind="" value="" maxlength="25" class="form-control"  />
+  
+     
+
+
+    <input name="formComponentsMap['order'].hasAgreedToBeContactedByAffiliates" type="checkbox" value="true" class="check"
+        
+    />
+    <input type="hidden" name="_formComponentsMap['order'].hasAgreedToBeContactedByAffiliates"/>
+</div>
+
+<div class="clear"></div>
+
+<h5 class="shipping_toggle">
+    <input name="formComponentsMap['order'].hasSameShipToAddress" type="checkbox" value="true" data-bind="click: toggleShippingAddressVisibility" checked="checked" class="check"/>
+    <input type="hidden" name="_formComponentsMap['order'].hasSameShipToAddress"/>
+    
+
+      <span>Uncheck to ship to a different address.</span>
+</h5>
+
+<center>
+<p style="text-align: left; text-align:center; max-width:80%">
+Your purchase may be subject
+to state sales tax.</p>
+</center>
+        <div id="shipping_div" style="display: none;" data-bind="visible: shippingAddressVisible">
+
+      <h2 class="form_headline">Enter Your Shipping Address</h2>
+
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">First Name:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToFirstName" type="text" value="" maxlength="20" class="form-control" class="form_input" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Last Name:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToLastName" type="text" value="" maxlength="25" class="form-control" class="form_input" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Address 1:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToAddressLine1" type="text" value="" maxlength="35" class="form-control" class="form_input" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required" style="color:#FFF;">*</span><span class="field_text">Address 2:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToAddressLine2" type="text" value="" maxlength="35" class="form-control" class="form_input" />      </div>
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">City:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToCity" type="text" value="" maxlength="35" class="form-control" class="form_input" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+        <div id="__shipToStateInputSection__" class="form-group" >      <div class="field_wrapper">
+          <div class="field_name">
+              <span class="required">*</span><span class="field_text">State:</span>
+          </div>
+          <div class="field_input">
+        <input id="whichShipToStateInput" name="formComponentsMap['order'].whichShipToStateInput" type="hidden" value="" class="form-control"/>
+        <span id="shipToStateSelect" data-bind=""></span>
+
+    <input type="text" data-bind="value:AGORA.viewModel.shippingStateName, visible: false " class="form-control" />
+          </div>
+  
+     
+          <div class="clear"></div>
+      </div>
+</div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Zip/Postal Code:</span>
+      </div>
+      <div class="field_input">
+    <input id="__shipToZipCode"
+        name="formComponentsMap['order'].shipToPostalCode" type="text" value="" maxlength="10" class="form-control" class="form_input" />
+      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Country:</span>
+      </div>
+      <div class="field_input">
+
+        <select id="__shippingCountrySelect__" name="formComponentsMap['order'].shipToCountryId" class="form_input"
+                data-bind=""
+                class="form-control input-sm">
+
+                <option value="1" selected="selected" >UNITED STATES</option>
+
+                <option value="3"  >AFGHANISTAN</option>
+
+                <option value="4"  >ALBANIA</option>
+
+                <option value="5"  >ALGERIA</option>
+
+                <option value="6"  >ANDORRA</option>
+
+                <option value="7"  >ANGOLA</option>
+
+                <option value="9"  >ANGUILLA</option>
+
+                <option value="8"  >ANTARCTICA</option>
+
+                <option value="2"  >ANTIGUA AND BARBUDA</option>
+
+                <option value="10"  >ARGENTINA</option>
+
+                <option value="11"  >ARMENIA</option>
+
+                <option value="12"  >ARUBA</option>
+
+                <option value="13"  >AUSTRIA</option>
+
+                <option value="16"  >AZERBAIDJAN</option>
+
+                <option value="24"  >BAHAMAS</option>
+
+                <option value="17"  >BAHRAIN</option>
+
+                <option value="18"  >BANGLADESH</option>
+
+                <option value="19"  >BARBADOS</option>
+
+                <option value="20"  >BELARUS</option>
+
+                <option value="25"  >BELGIUM</option>
+
+                <option value="26"  >BELIZE</option>
+
+                <option value="21"  >BENIN</option>
+
+                <option value="22"  >BERMUDA</option>
+
+                <option value="35"  >BHUTAN</option>
+
+                <option value="27"  >BOLIVIA</option>
+
+                <option value="254"  >BONAIRE,ST EUST,SABA</option>
+
+                <option value="28"  >BOSNIA-HERZEGOVINA</option>
+
+                <option value="29"  >BOTSWANA</option>
+
+                <option value="30"  >BRAZIL</option>
+
+                <option value="100"  >BRITISH INDIAN OCEAN</option>
+
+                <option value="32"  >BRUNEI DARUSSALAM</option>
+
+                <option value="33"  >BULGARIA</option>
+
+                <option value="23"  >BURKINA FASO</option>
+
+                <option value="31"  >BURUNDI</option>
+
+                <option value="36"  >CAMBODIA</option>
+
+                <option value="37"  >CAMEROON</option>
+
+                <option value="38"  >CANADA</option>
+
+                <option value="40"  >CAPE VERDE</option>
+
+                <option value="41"  >CAYMAN ISLANDS</option>
+
+                <option value="39"  >CENTRAL AFRICAN REPU</option>
+
+                <option value="42"  >CHAD</option>
+
+                <option value="43"  >CHILE</option>
+
+                <option value="46"  >CHINA</option>
+
+                <option value="242"  >CHRISTMAS ISLAND</option>
+
+                <option value="253"  >COCOS (KEELING) ISLA</option>
+
+                <option value="47"  >COLOMBIA</option>
+
+                <option value="48"  >COMOROS</option>
+
+                <option value="49"  >CONGO</option>
+
+                <option value="45"  >COOK ISLANDS</option>
+
+                <option value="50"  >COSTA RICA</option>
+
+                <option value="51"  >CROATIA</option>
+
+                <option value="52"  >CUBA</option>
+
+                <option value="241"  >CURACAO</option>
+
+                <option value="53"  >CYPRUS</option>
+
+                <option value="54"  >CZECH REPUBLIC</option>
+
+                <option value="55"  >DENMARK</option>
+
+                <option value="56"  >DJIBOUTI</option>
+
+                <option value="57"  >DOMINICA</option>
+
+                <option value="58"  >DOMINICAN REPUBLIC</option>
+
+                <option value="67"  >EAST TIMOR</option>
+
+                <option value="60"  >ECUADOR</option>
+
+                <option value="62"  >EGYPT</option>
+
+                <option value="63"  >EL SALVADOR</option>
+
+                <option value="61"  >EQUATIORIAL GUINEA</option>
+
+                <option value="64"  >ERITREA</option>
+
+                <option value="65"  >ESTONIA</option>
+
+                <option value="66"  >ETHIOPIA</option>
+
+                <option value="68"  >FAEROE ISLANDS</option>
+
+                <option value="69"  >FALKLAND ISLANDS</option>
+
+                <option value="75"  >FED STATE MICRONESIA</option>
+
+                <option value="71"  >FIJI</option>
+
+                <option value="72"  >FINLAND</option>
+
+                <option value="74"  >FRANCE</option>
+
+                <option value="255"  >FRANCE METROPOLITAN</option>
+
+                <option value="70"  >FRENCH GUIANA</option>
+
+                <option value="73"  >FRENCH POLYNESIA</option>
+
+                <option value="240"  >FRENCH SOUTHERN TERR</option>
+
+                <option value="77"  >GABON</option>
+
+                <option value="79"  >GAMBIA</option>
+
+                <option value="84"  >GEORGIA, REPUBLIC OF</option>
+
+                <option value="83"  >GERMANY</option>
+
+                <option value="85"  >GHANA</option>
+
+                <option value="86"  >GIBRALTAR</option>
+
+                <option value="88"  >GREECE</option>
+
+                <option value="89"  >GREENLAND</option>
+
+                <option value="87"  >GRENADA</option>
+
+                <option value="78"  >GUADELOUPE</option>
+
+                <option value="90"  >GUATEMALA</option>
+
+                <option value="91"  >GUINEA</option>
+
+                <option value="81"  >GUINEA BISSAU</option>
+
+                <option value="92"  >GUYANA</option>
+
+                <option value="93"  >HAITI</option>
+
+                <option value="244"  >HEARD AND MC DONALD</option>
+
+                <option value="95"  >HONDURAS</option>
+
+                <option value="94"  >HONG KONG</option>
+
+                <option value="96"  >HUNGARY</option>
+
+                <option value="97"  >ICELAND</option>
+
+                <option value="99"  >INDIA</option>
+
+                <option value="98"  >INDONESIA</option>
+
+                <option value="101"  >IRAN</option>
+
+                <option value="103"  >IRAQ</option>
+
+                <option value="102"  >IRELAND</option>
+
+                <option value="104"  >ISRAEL</option>
+
+                <option value="105"  >ITALY</option>
+
+                <option value="106"  >IVORY COAST</option>
+
+                <option value="107"  >JAMAICA</option>
+
+                <option value="108"  >JAPAN</option>
+
+                <option value="109"  >JORDAN</option>
+
+                <option value="110"  >KAZAKHSTAN</option>
+
+                <option value="111"  >KENYA</option>
+
+                <option value="112"  >KIRIBATI</option>
+
+                <option value="113"  >KOREA</option>
+
+                <option value="161"  >KOREA DEMOCRATIC PE</option>
+
+                <option value="114"  >KUWAIT</option>
+
+                <option value="115"  >KYRGYZSTAN</option>
+
+                <option value="116"  >LAO PEOPLES DEM REP</option>
+
+                <option value="117"  >LATVIA</option>
+
+                <option value="119"  >LEBANON</option>
+
+                <option value="122"  >LESOTHO</option>
+
+                <option value="123"  >LIBERIA</option>
+
+                <option value="118"  >LIBYA(N ARAB JAMAHI)</option>
+
+                <option value="124"  >LIECHTENSTEIN</option>
+
+                <option value="125"  >LITHUANIA</option>
+
+                <option value="126"  >LUXEMBOURG</option>
+
+                <option value="127"  >MACAO</option>
+
+                <option value="133"  >MACEDONIA</option>
+
+                <option value="128"  >MADAGASCAR</option>
+
+                <option value="129"  >MALAWI</option>
+
+                <option value="142"  >MALAYSIA</option>
+
+                <option value="140"  >MALDIVES</option>
+
+                <option value="139"  >MALI</option>
+
+                <option value="141"  >MALTA</option>
+
+                <option value="137"  >MARSHALL ISLANDS</option>
+
+                <option value="130"  >MARTINIQUE</option>
+
+                <option value="131"  >MAURITANIA</option>
+
+                <option value="147"  >MAURITIUS</option>
+
+                <option value="132"  >MAYOTTE</option>
+
+                <option value="134"  >MEXICO</option>
+
+                <option value="138"  >MOLDOVA</option>
+
+                <option value="143"  >MONACO</option>
+
+                <option value="135"  >MONGOLIA</option>
+
+                <option value="145"  >MONTSERRAT</option>
+
+                <option value="144"  >MOROCCO</option>
+
+                <option value="146"  >MOZAMBIQUE</option>
+
+                <option value="148"  >MYANMAR</option>
+
+                <option value="149"  >NAMIBIA</option>
+
+                <option value="151"  >NAURU</option>
+
+                <option value="153"  >NEPAL</option>
+
+                <option value="150"  >NETHERLAND ANTILLES</option>
+
+                <option value="154"  >NETHERLANDS</option>
+
+                <option value="152"  >NEW CALEDONIA</option>
+
+                <option value="164"  >NEW ZEALAND</option>
+
+                <option value="158"  >NICARAGUA</option>
+
+                <option value="155"  >NIGER</option>
+
+                <option value="159"  >NIGERIA</option>
+
+                <option value="160"  >NIUE</option>
+
+                <option value="246"  >NORFOLK ISLAND</option>
+
+                <option value="162"  >NORTHERN MARIANA ISL</option>
+
+                <option value="163"  >NORWAY</option>
+
+                <option value="165"  >OMAN</option>
+
+                <option value="166"  >PAKISTAN</option>
+
+                <option value="167"  >PALAU</option>
+
+                <option value="168"  >PANAMA</option>
+
+                <option value="156"  >PAPUA NEW GUINEA</option>
+
+                <option value="169"  >PARAGUAY</option>
+
+                <option value="170"  >PERU</option>
+
+                <option value="171"  >PHILIPPINES</option>
+
+                <option value="172"  >PITCAIRN ISLANDS</option>
+
+                <option value="173"  >POLAND</option>
+
+                <option value="174"  >PORTUGAL</option>
+
+                <option value="175"  >QATAR</option>
+
+                <option value="176"  >REUNION</option>
+
+                <option value="178"  >ROMANIA</option>
+
+                <option value="225"  >RUSSIAN FEDERATION</option>
+
+                <option value="179"  >RWANDA</option>
+
+                <option value="198"  >SAINT HELENA</option>
+
+                <option value="188"  >SAINT KITTS AND NEVI</option>
+
+                <option value="191"  >SAINT LUCIA</option>
+
+                <option value="202"  >SAINT VINCENT AND GR</option>
+
+                <option value="181"  >SAMOA</option>
+
+                <option value="193"  >SAN MARINO</option>
+
+                <option value="197"  >SAO TOME & PRINCIPE</option>
+
+                <option value="182"  >SAUDI ARABIA</option>
+
+                <option value="183"  >SENEGAL</option>
+
+                <option value="236"  >SERBIA & MONTENEGRO</option>
+
+                <option value="185"  >SEYCHELLES</option>
+
+                <option value="186"  >SIERRA LEONE</option>
+
+                <option value="187"  >SINGAPORE</option>
+
+                <option value="249"  >SINT MAARTEN</option>
+
+                <option value="190"  >SLOVAKIA</option>
+
+                <option value="192"  >SLOVENIA</option>
+
+                <option value="189"  >SOLOMON ISLANDS</option>
+
+                <option value="194"  >SOMALIA</option>
+
+                <option value="180"  >SOUTH AFRICA</option>
+
+                <option value="247"  >SOUTH GEORGIA & THE S. SANDWICH ISL.</option>
+
+                <option value="177"  >SOUTH KOREA</option>
+
+                <option value="195"  >SPAIN</option>
+
+                <option value="196"  >SRI LANKA</option>
+
+                <option value="245"  >ST. MARTIN</option>
+
+                <option value="199"  >ST. PIERRE &MIQUELON</option>
+
+                <option value="200"  >SUDAN</option>
+
+                <option value="201"  >SURINAME</option>
+
+                <option value="248"  >SVALBARD AND JAN MAY</option>
+
+                <option value="206"  >SWAZILAND</option>
+
+                <option value="204"  >SWEDEN</option>
+
+                <option value="205"  >SWITZERLAND</option>
+
+                <option value="207"  >SYRIA</option>
+
+                <option value="208"  >TAIWAN</option>
+
+                <option value="209"  >TAJIKISTAN</option>
+
+                <option value="210"  >TANZANIA</option>
+
+                <option value="212"  >THAILAND</option>
+
+                <option value="215"  >TOGO</option>
+
+                <option value="250"  >TOKELAU</option>
+
+                <option value="214"  >TONGA</option>
+
+                <option value="217"  >TRINIDAD AND TOBAGO</option>
+
+                <option value="218"  >TUNISIA</option>
+
+                <option value="219"  >TURKEY</option>
+
+                <option value="213"  >TURKMENISTAN</option>
+
+                <option value="211"  >TURKS AND CAICOS</option>
+
+                <option value="220"  >TUVALU</option>
+
+                <option value="222"  >UGANDA</option>
+
+                <option value="223"  >UKRAINE</option>
+
+                <option value="221"  >UNITED ARAB EMIRATES</option>
+
+                <option value="82"  >UNITED KINGDOM</option>
+
+                <option value="251"  >UNITED STATES MINOR</option>
+
+                <option value="224"  >URUGUAY</option>
+
+                <option value="226"  >UZBEKISTAN</option>
+
+                <option value="227"  >VANUATU</option>
+
+                <option value="228"  >VATICAN CITY STATE</option>
+
+                <option value="229"  >VENEZUELA</option>
+
+                <option value="230"  >VIETNAM</option>
+
+                <option value="231"  >VIRGIN IS, BRIT</option>
+
+                <option value="252"  >WALLIS AND FUTUNA IS</option>
+
+                <option value="243"  >WESTERN SAHARA</option>
+
+                <option value="235"  >YEMEN</option>
+
+                <option value="237"  >ZAIRE</option>
+
+                <option value="238"  >ZAMBIA</option>
+
+                <option value="239"  >ZIMBABWE</option>
+        </select>
+        
+        <input type="text" data-bind="value:AGORA.viewModel.shippingCountryName, visible: false " class="form-control" />
+     
+      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+  <div class="field_wrapper">
+      <div class="field_name">
+          <span class="required">*</span><span class="field_text">Email:</span>
+      </div>
+      <div class="field_input">
+<input name="formComponentsMap['order'].shipToEmailAddress" type="text" value="" maxlength="254" class="form-control" id="__shippingEmailAddress__" class="form_input" />      </div>
+  
+     
+      <div class="clear"></div>
+  </div>
+
+    <div data-bind="" class="form-group" >
+      <div class="field_wrapper">
+          <div class="field_name">
+              <span class="required">*</span><span class="field_text">Re-Type Email:</span>
+          </div>
+          <div class="field_input">
+<input name="formComponentsMap['order'].confirmShipToEmailAddress" type="text" value="" maxlength="254" class="form-control" class="form_input" />          </div>
+  
+     
+          <div class="clear"></div>
+      </div>
+    </div>
+
+        </div>
+        
+
+
+
+  <h2 class="form_headline">Step #4: Enter Your Billing Information</h2>
+
+      <div class="security_stamp">
+<!-- This link contains a Javascript file that generates the new McAffe Image --> 
+
+     
+          <div class="clear"></div>
+
+  
+     
+      </div>
+<!-- START CREDIT CARD HOLDER MACRO -->
+<div class="field_wrapper" style="margin-top:4em;">
+    <div class="field_name">
+        <span class="required">*</span><span class="field_text">Cardholder Name</span>
+    </div>
+    <div class="field_input cardHolderInput">
+<input name="formComponentsMap['paymentOption'].accountHolderName1" type="text" value="" maxlength="40" class="form-control" class="dataField form_input" />    </div>
+  
+     
+    <div class="clear"></div>
+</div>
+
+<!-- FINISH CREDIT CARD HOLDER MACRO -->
+
+
+
+      <div class="field_wrapper">
+          <div class="field_name">
+              <span class="required">*</span><span class="field_text">Card Number</span>
+          </div>
+          <div class="field_input">
+<input name="formComponentsMap['paymentOption'].maskedCreditCardNumber" type="text" value="" maxlength="25" data-bind="value: selectedCreditCardMaskedNumber, enable: (AGORA.viewModel.selectedCreditCard() == null)" autoComplete="off" placeholder="Enter only numbers. No spaces or dashes." class="form-control" class="dataField form_input" />          </div>
+  
+     
+          <div class="clear"></div>
+      </div>
+
+      <div class="field_wrapper">
+          <div class="field_name">
+              <span class="required">*</span><span class="field_text">Expiration Month</span>
+          </div>
+          <div class="field_input">
+    <select name="formComponentsMap['paymentOption'].creditCardExpirationMonth" data-bind="value: AGORA.viewModel.selectedCreditCard()?parseInt(AGORA.viewModel.selectedCreditCard().expMonth, 10):'0'" class="form-control input-sm" class="dataList form_input exp_select">
+        <option value="0">Select a Month</option>
+            <option value="1" >01</option>
+            <option value="2" >02</option>
+            <option value="3" >03</option>
+            <option value="4" >04</option>
+            <option value="5" >05</option>
+            <option value="6" >06</option>
+            <option value="7" >07</option>
+            <option value="8" >08</option>
+            <option value="9" >09</option>
+            <option value="10" >10</option>
+            <option value="11" >11</option>
+            <option value="12" >12</option>
+    </select>
+          </div>
+          <div class="clear"></div>
+      </div>
+
+      <div class="field_wrapper">
+          <div class="field_name">
+              <span class="required">*</span><span class="field_text">Expiration Year</span>
+          </div>
+          <div class="field_input">
+    <select name="formComponentsMap['paymentOption'].creditCardExpirationYear"  data-bind="value: AGORA.viewModel.selectedCreditCard()?AGORA.viewModel.selectedCreditCard().expYear:'0'" class="form-control input-sm" class="dataList form_input exp_select">
+
+
+    <option value="0">Select a Year</option>
+        <option value="2018" >2018</option>
+        <option value="2019" >2019</option>
+        <option value="2020" >2020</option>
+        <option value="2021" >2021</option>
+        <option value="2022" >2022</option>
+        <option value="2023" >2023</option>
+        <option value="2024" >2024</option>
+        <option value="2025" >2025</option>
+        <option value="2026" >2026</option>
+        <option value="2027" >2027</option>
+        <option value="2028" >2028</option>
+        <option value="2029" >2029</option>
+        <option value="2030" >2030</option>
+        <option value="2031" >2031</option>
+        <option value="2032" >2032</option>
+        <option value="2033" >2033</option>
+    </select>
+          </div>
+  
+     
+          <div class="clear"></div>
+      </div>
+
+<div class="field_wrapper">
+  <div class="field_name">
+    <span class="required">*</span><span class="field_text">Card security code</span>
+  </div>
+  <div class="field_input">
+<input name="formComponentsMap['paymentOption'].creditCardSecurityCode" type="text" value="" maxlength="4" autoComplete="off" class="form-control"  />  
+     
+    </div>
+    <div class="clear"></div>
+  </div>
+  <!-- dependent name: CVV Code -->
+
+<p id="cvv_link" style="font-size:11px;color:#efefef;cursor:pointer;/* text-align:  left; */text-decoration:underline;color:#0645AD;">
+                What is my CVV code?</p>
+
+
+                <div class="cvv_pop" style="display: none; max-width: 500px; margin: auto; font-size: 10px; text-align: left;">
+                 <p>A CVV, CVV2, CVC2 or Card Security Code is an authentication feature added by credit card companies as an extra security messure against fraud. Your code can be found on the The back of your Visa, MasterCard, or Discover here:</p>
+<img src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/ccard_1.jpg" alt="Card Security" width="100%" class="image_center">
+
+      <p>American Express cards have the code on the front. America Express refers to this as a CID Code:</p>
+<img src="https://d13p2xj50zkyqm.cloudfront.net/promos/images/amex_1.jpg" alt="Card Security" width="100%" class="image_center">
+                 <p class="cvv_close" style="cursor:pointer; text-align:center; color:#0645AD;">Click here to close Card Security Code / CVV Info</p>
+
+                </div>
+
+
+
+    <div class="row">
+        <div class="form-group" data-bind="visible: (AGORA.viewModel.selectedCreditCard() == null)" >
+                          <input data-bind="checked: shouldSaveCreditCard" name="formComponentsMap['paymentOption'].shouldSaveCreditCard" type="checkbox" value="true" 
+        
+    />
+ <span style="font-size:1.2em;">Check this box if you'd like to save this credit card for future purchases<br>
+
+                      Credit card name:</span>
+
+<input name="formComponentsMap['paymentOption'].creditCardDescription" type="text" value="" maxlength="50" data-bind="enable: shouldSaveCreditCard, value: selectedCreditCardDescription" autoComplete="off" class="form-control" class="dataField" />  
+     
+
+</div>
+            <!-- ko ifnot: selectedChoiceHasDirectDebit() -->
+
+        <!-- ko if: isAutoRenewChoiceSelected() -->
+            
+        <!-- /ko -->
+
+            <!-- /ko -->
+
+          <div>    <input name="btnPaymentOptionSubmit" type="submit" value="Continue"  class="continue" class="continue" />
+</div>
+
+    </div>
+
+    
+    
+
+
+          <h2 class="form_headline" style="font-size:1.8em;border:none; text-align:center">Your Promotion Code is: <br /><span id="promoCode">QAWNU9N1</span></h2>
+
+  </form>
+
+    </div><!-- /.af_form_wrapper -->
+
+
+
+  </div><!-- extra div for error correction -->
+
+  <div class="clear" style="clear:both;">&nbsp;</div>
+<p class="clickh" style="text-align: center;">Click Here to Get Started Today</p>
+
+  </div><!-- /.background -->
+
+</div><!-- /.contentwrapper -->
+
+<script>
+    $(document).ready(function () {
+
+        var right_column = $('div.right_column'),
+            right_couumn_hl = {};
+
+        if (right_column.length == 1) {
+            right_couumn_hl = right_column.find('h2.form_headline');
+            right_couumn_hl.eq(0).css('border', 'none');
+            right_couumn_hl.eq(0).css('padding-top', '0');
+        }
+
+    });
+</script>
+
+<script>
+    (function docReady() {
+        if (document.readyState === "complete") {
+            return setTimeout(docReady, 1);
+        }
+        if (document) {
+            var docListen = document.addEventListener ? "addEventListener" : "attachEvent",
+                docMethod = document.addEventListener ? "DOMContentLoaded" : "onreadystatechange";
+            if (document.addEventListener) {
+                document[docListen](docMethod, ready, false);
+            } else {
+                document[docListen](docMethod, ready);
+            }
+        } else if (window) {
+            var winListen = window.addEventListener ? "addEventListener" : "attachEvent",
+                winMethod = window.addEventListener ? "load" : "onload";
+            if (window.addEventListener) {
+                window[winListen](winMethod, ready, false);
+            } else {
+                window[winListen](winMethod, ready);
+            }
+        }
+    })();
+
+    function ready() {
+        fireTime();
+    }
+
+    // Get Current Time and convert to Epoch
+    function timeNow() {
+        var today = new Date();
+        var todayEpoch = today.getTime();
+        return todayEpoch;
+    }
+    // Set date when timer expires convert to Epoch
+    var endEpoch = timeNow() + minute_timer_end;
+
+    function sec() {
+        var ts = (endEpoch - timeNow()) / 1000;
+        var tm = Math.floor(ts / 60);
+        var dp = (ts / 60) + (-1 * tm);
+        var rs = Math.floor(60 * dp);
+        if (rs <= 9)
+            rs = "0" + rs;
+        return rs;
+    }
+
+    function min() {
+        var tm = (endEpoch - timeNow()) / 60000;
+        var th = Math.floor(tm / 60);
+        var dp = (tm / 60) + (-1 * th);
+        var rm = Math.floor(60 * dp);
+        if (rm <= 9)
+            rm = "0" + rm;
+        return rm;
+    }
+
+    function fireTime() {
+        var nowTime = timeNow();
+        if (nowTime >= endEpoch) {
+            document.getElementById("countdown").innerHTML = "Time Has Run Out";
+            return;
+        } else {
+            var sl = sec();
+            document.getElementById("sec").innerHTML = sl;
+            var ml = min();
+            document.getElementById("min").innerHTML = ml;
+        }
+        window.setTimeout(
+            function () {
+                fireTime();
+            },
+            1000
+        );
+    };
+</script>
+
+
+
+<script>
+    $('.clickh').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#sign").offset().top
+        }, 50);
+        $('.step2').addClass('red');
+    });
+</script>
+
+</div></body></html>
